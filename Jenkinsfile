@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script{
                 	checkout([$class: 'GitSCM', branches: [[name: '*/main']],
-                	userRemoteConfigs: [[url: 'https://github.com/farahayar/angularprojforcd.git']]]
+                	userRemoteConfigs: [[url: 'https://github.com/farahayar/angularprojforcd.git']]])
                 }
             }
 
