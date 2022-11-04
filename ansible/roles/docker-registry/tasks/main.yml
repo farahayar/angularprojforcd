@@ -1,7 +1,10 @@
 --
 # tasks file for docker-registy
 - name: log into docker hub regitry
-  shell: docker login -u farahayari -p 203JFT0527
+  docker_login:
+   email: "farah.ayari1@esprit.tn"
+   username: "farahayari"
+   password: "203JFT0527"
    
 - name: tag and push to docker hub
   docker_image:
@@ -9,4 +12,3 @@
    repository: farahayari/cdproject
    push: yes
    source: local
- 
