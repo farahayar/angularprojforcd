@@ -12,5 +12,14 @@ pipeline {
             }
 
         }
+        
+        stage('build') {
+            steps {
+                script{
+                	sh " ansible-playbook ansible/build.yml - "
+                }
+            }
+
+        }
 }
 }
