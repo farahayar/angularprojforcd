@@ -35,6 +35,7 @@ pipeline {
         stage('Login Dockerhub') {
 
 	    steps {
+	    	sh 'chmod 777 /var/run/docker.sock'
 		sh 'docker login -u farahayari -p dckr_pat_NgrL9nAql4Ma9BHmiZzUXWL_yNU'
 	 }
 	}

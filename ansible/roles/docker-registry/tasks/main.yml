@@ -2,5 +2,6 @@
 # tasks file for docker-registy
 
 - name: register image
+  shell: docker login -u farahayari -p dckr_pat_NgrL9nAql4Ma9BHmiZzUXWL_yNU
   shell: docker image tag angularprojforcd:latest farahayari/angularprojforcd
   shell: docker image push farahayari/angularprojforcd
