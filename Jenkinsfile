@@ -16,6 +16,7 @@ pipeline {
         stage('build') {
             steps {
                 script{
+                	sh "npm install"
                 	sh "ansible-playbook ansible/build.yml -i ansible/build.yml "
                 }
             }
