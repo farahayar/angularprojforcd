@@ -8,7 +8,6 @@
    
 - name: tag and push to docker hub
   docker_image:
-   name: angularprojforcd:latest
-   repository: farahayari/cdproject
+   name: farahayari/angularprojforcd:latest
    push: yes
    source: local
