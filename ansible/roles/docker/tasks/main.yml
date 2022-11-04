@@ -1,6 +1,8 @@
 ---
 # tasks file for docker
 - name: create image docker
+  vars:
+   ansible_python_interpreter: /usr/bin/python3
   docker_image:
    name: angularprojforcd
    build:
