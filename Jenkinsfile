@@ -48,7 +48,7 @@ pipeline {
 
         }
         
-        stage('docker-registry') {
+        stage('docker-compose') {
             steps {
                 script{
                 	sh "ansible-playbook ansible/docker-compose.yml -i ansible/inventory/host.yml "
