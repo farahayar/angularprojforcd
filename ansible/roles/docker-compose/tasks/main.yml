@@ -2,6 +2,6 @@
 # tasks file for docker-compose
 - name: test docker-compose
   docker_compose:
-   project_src: ~/Desktop/angularprojforcd/monotoring/
+   project_src: /var/lib/jenkins/workspace/cdProject/monotoring/
    state: present
 
