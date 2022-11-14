@@ -47,7 +47,6 @@ pipeline {
             }
 
         }
-        
         stage('docker-compose') {
             steps {
                 script{
